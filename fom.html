@@ -1,0 +1,66 @@
+<html>
+<head>
+<script>
+       function validateForm() {
+  
+  var y = document.forms["m"]["pd"].value;
+   var x = document.forms["m"]["fn"].value;
+   var z= document.forms["m"]["ln"].value;
+   var c = document.forms["m"]["eid"].value;
+   var b= document.forms["m"]["cpd"].value;
+  
+  if (x == "") {
+    alert("FirstName must be filled out");
+    return false;
+  }
+  
+  
+  if (z == "") {
+    alert("LastName must be filled out");
+    return false;
+  }
+  if (c== "") {
+    alert("Email must be filled out");
+    return false;
+  }
+  if (y == "") {
+    alert("Password must be filled out");
+    return false;
+  }
+  if (b!=y) {
+    alert("Password not same");
+    return false;
+  }
+  return true;
+}
+    </script>
+	</head>
+<link rel="stylesheet" href="final.css">
+<div class="container">
+    <div class="content">
+     <form name="m" action="1.html" onsubmit="return validateForm()" method="post"> 
+    <h1>Sign Up</h1>
+    <h2>First Name</h2>
+            <input type="text" name="first name" placeholder="Type your first name" maxlength="12" id='fn'><br>
+        <h2>Last Name</h2>
+            <input type="text" name="last name" placeholder="Type your last name" maxlength="12" id='ln'><br>           
+            <h2>Email id</h2>
+            <input type="email" name="email" placeholder="Type your email"  id='eid'><br>
+            
+
+
+    <h2>Password</h2>
+            <input type="password" name="password" placeholder="Type your password" maxlength="16" id='pd'><br>
+<h2>Confirm Password</h2>
+            <input type="password" name="confirm password" placeholder="Type your password again" maxlength="16" id='cpd'><br>
+           <input type="checkbox">
+           <lable>Remember me</lable><br>
+    <input type="submit" value="Sign Up" >
+	</form>
+      </div>
+  <div class="avatar">
+    <img src="new.jpg">
+  </div>
+  
+    </div>
+</html>

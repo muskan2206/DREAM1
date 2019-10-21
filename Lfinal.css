@@ -1,0 +1,33 @@
+body{
+  background-image: url("wall.jpg");}
+div.container{
+display:flex;
+flex-direction:row;
+  background-color:rgba(10,10,10,0.8);
+  width:360px;
+  height:400px;
+  position: absolute;
+  top: 17.5%;
+  left: 31%;
+  border: 4px double grey;
+  border-radius: 100px;
+  display: flex;}
+div.content{
+  padding:50px;
+  margin: -5px 1px 1px 30px;
+  display:block;}
+div.avatar img{
+  width:90px;
+  height:80px;
+  position: absolute;
+  top: 17%;
+  left: 60%;}
+div.avatar2 img{
+  width:100px;
+  height: 85px;
+  position: absolute;
+  top: -20.5%;
+  left: 20.7%;}
+h1{color:white;}
+h2{color:white;}
+lable{color:white;} 

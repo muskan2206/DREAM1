@@ -1,0 +1,46 @@
+<html>
+<head>
+<script>
+       
+        function validateForm() {
+  
+  var y = document.forms["m"]["pd"].value;
+   var x = document.forms["m"]["fn"].value;
+  if (x == "") {
+    alert("Email must be filled out");
+    return false;
+  }
+  
+  if (y == "") {
+    alert("password must be filled out");
+    return false;
+  }
+}
+    </script>
+</head>
+<link rel="stylesheet" href="Lfinal.css">
+<div class="container">
+
+    <div class="content">
+      <form name="m" action="1.html" onsubmit="return validateForm()" method="post">
+    <h1>Login</h1>
+               
+            <h2>Email</h2>
+            <input type="email" name="email" placeholder="Type your email" id='fn'><br>
+            
+
+
+    <h2>Password</h2>
+            <input type="password" name="password" placeholder="Type your password" maxlength="16" id='pd'><br>
+
+           <lable>Remember me</lable><br>
+    <input type="submit" value="Loging" >
+	</form>
+
+      </div>
+  <div class="avatar">
+    <img src="new.jpg">
+  </div>
+  
+    </div>
+</html>
